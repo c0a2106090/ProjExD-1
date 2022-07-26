@@ -132,13 +132,13 @@ def collision(tori, obs, screen: Screen):
 #<C0A21060>
 #衝突後のリスタート等の処理
 def quit():
-    END_flg=True
-    while END_flg==True:
+    END_FLG=True
+    while END_FLG:
         for event in pg.event.get():
             if event.type == pg.QUIT or pg.key.get_pressed()[pg.K_ESCAPE]:
-                END_flg = False
+                END_FLG = False
             elif pg.key.get_pressed()[pg.K_r]:
-                END_flg = False
+                END_FLG = False
                 main()
     pg.quit()
     sys.exit()
